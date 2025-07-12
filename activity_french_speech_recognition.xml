@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏳ Time left: 10s"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
+    <!-- Word to Spell -->
+    <TextView
+        android:id="@+id/word_to_spell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bonjour"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp" />
+
+    <!-- Hint Display -->
+    <TextView
+        android:id="@+id/hint_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint: Bo..."
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+    <!-- Listen & Speak Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_listen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔊 Listen"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎤 Speak"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Recognition Result -->
+    <TextView
+        android:id="@+id/recognition_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You said: ..."
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"/>
+
+    <!-- Score & High Score -->
+    <TextView
+        android:id="@+id/score_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score: 0 / 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/high_score_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Score: 0"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"/>
+
+    <!-- Word History -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/word_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History: \n"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+
+    <!-- Control Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💡 Hint"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔄 Retry"
+            android:backgroundTint="@color/orange"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="➡ Next"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Change Difficulty -->
+    <Button
+        android:id="@+id/btn_change_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎚 Change Difficulty"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

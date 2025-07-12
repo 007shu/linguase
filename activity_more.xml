@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Language Selection Buttons -->
+            <TextView
+                android:id="@+id/frenchText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="French Language (Français)"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/germanText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="German Language (Deutsch)"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/spanishText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spanish Language (Español)"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <TextView
+                android:id="@+id/japaneseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Japanese Language (日本語)"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground" />
+
+            <!-- Dynamic TextView for Information -->
+            <TextView
+                android:id="@+id/infoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on a language to see details."
+                android:textSize="16sp"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
